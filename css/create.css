@@ -1,10 +1,102 @@
-.quiz-header {
-  padding: 20 px;
-  margin: 30 px 0 10 px;
-  border: none;
-  border-top: 25 px solid orange;
-  box-shadow: #fff 1 px 1 px 2 px 1 px;
-  border-radius: 10 px;
-  display: flex;
-  width: 90%;
+:root {
+    --dark-shadow: #29455a;
+    --light-shadow: #b5c2c2;
+    --primary: #ffffff;
+    --secondary: #23395b;
+    --accent-pink: #748194;
+    --accent-mustard: #f7c550;
+    --gradient: linear-gradient(
+      to right,
+      var(--secondary) -10%,
+      var(--accent-pink) 30%,
+      var(--accent-mustard) 100%
+    );
+    --glass-gradient: linear-gradient(
+      to right bottom,
+      /* rgba(257, 257, 257, 0.3), */
+      rgba(14, 22, 36, 0.2),
+      rgba(216, 30, 91, 0.2),
+      rgba(97, 77, 31, 0.2)
+    );
 }
+
+.page-bg{
+    display: flex;
+    flex-direction: column;
+}
+
+.create-quiz-body{
+    margin-top: 20px;
+	align-items: center;
+	display: flex;
+	flex-direction: column;
+}
+
+.create-quiz-body .quiz-header h2{
+    color: var(--secondary);
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: bold;
+    font-size: 32px;
+}
+
+.create-quiz-body .quiz-header {
+    padding: 20px;
+    margin: 30px 0px 10px 0px;
+    border: none;
+	border-top: 25px solid var(--accent-pink);
+	box-shadow: var(--light-shadow) 1px 1px 2px 1px;
+	border-radius: 10px;
+	display: flex;
+	width: 90%;
+	flex-direction: column;
+}
+
+.create-quiz-body #quiz-title {
+    border: var(--secondary) 1px solid;
+	margin: 10px;
+	padding: 10px;
+	font-size: 26px;
+	font-weight: bold;
+	color: var(--secondary);
+	font-family: Verdana, Geneva, Tahoma, sans-serif;
+	border-radius: none;
+    outline: none;
+	border: none;
+	border-bottom: 2px solid var(--light-shadow);
+}
+
+.controls{
+    margin-left: 55px;
+}
+
+.create-button{
+    align-items: center;
+	display: flex;
+	flex-direction: column;
+}
+
+.myButton {
+    margin: 10px;
+	box-shadow: 0px 3px 10px 2px #91b8b3;
+	background-color:var(--secondary);;
+	border-radius:28px;
+	border:1px solid #566963;
+	display:inline-block;
+	cursor:pointer;
+	color:#ffffff;
+	font-family:Arial;
+	font-size:20px;
+	padding:16px 54px;
+	text-decoration:none;
+	text-shadow:0px 2px 0px #2b665e;
+}
+.myButton:hover {
+	background-color:#6c7c7c;
+    text-decoration: none;
+    color : var(--dark-shadow);
+}
+.myButton:active {
+	position:relative;
+	top:1px;
+}
+
