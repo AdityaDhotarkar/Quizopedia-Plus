@@ -1,0 +1,10 @@
+.quiz-header {
+  padding: 20 px;
+  margin: 30 px 0 10 px;
+  border: none;
+  border-top: 25 px solid orange;
+  box-shadow: #fff 1 px 1 px 2 px 1 px;
+  border-radius: 10 px;
+  display: flex;
+  width: 90%;
+}
