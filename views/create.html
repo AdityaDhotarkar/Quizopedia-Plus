@@ -61,9 +61,67 @@
             </div>
         </div>
         <div class="controls">
-            <a href="#" class="myButton">Add Questions</a>
+            <a href="#openModal" class="myButton">Add Questions</a>
         </div>
-
+        <div id="openModal" class="modalbg">
+            <div class="dialog">
+                <a href="#close" title="Close" class="close">X</a>
+                <div class="card card-outline-secondary">
+                    <div class="card-header">
+                        <h3 class="mb-0"> Add Question</h3>
+                    </div>
+                    <div class="card-body">
+                        <form autocomplete="off" class="form" id="formLogin" name="formLogin" role="form">
+                            <div class="form-group">
+                                <label for="uname1">Enter the Question</label>
+                                <input class="form-control" id="uname1" name="uname1" required="" type="text">
+                            </div>
+                            <div class="form-group">
+                                <label>Enter the Option 1</label>
+                                <input autocomplete="new-password" class="form-control" id="pwd1" required=""
+                                    type="password">
+                            </div>
+                            <div class="form-group">
+                                <label>Enter the Option 2</label>
+                                <input autocomplete="new-password" class="form-control" id="pwd1" required=""
+                                    type="password">
+                            </div>
+                            <div class="form-group">
+                                <label>Enter the Option 3</label>
+                                <input autocomplete="new-password" class="form-control" id="pwd1" required=""
+                                    type="password">
+                            </div>
+                            <div class="form-group">
+                                <label>Enter the Option 4</label>
+                                <input autocomplete="new-password" class="form-control" id="pwd1" required=""
+                                    type="password">
+                            </div>
+                            <p>Please Choose Correct Option</p>
+                            <div class="form-check small row">
+                                <label class="form-check-label">
+                                    <input class="form-check-input" type="checkbox">
+                                    <span>Option 1</span>
+                                </label>
+                                <label class="form-check-label">
+                                    <input class="form-check-input" type="checkbox">
+                                    <span>Option 2</span>
+                                </label>
+                                <label class="form-check-label">
+                                    <input class="form-check-input" type="checkbox">
+                                    <span>Option 3</span>
+                                </label>
+                                <label class="form-check-label">
+                                    <input class="form-check-input" type="checkbox">
+                                    <span>Option 4</span>
+                                </label>
+                            </div>
+                            <button class="btn btn-success btn-lg float-right" type="button">Add Question</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <hr class="mb-4">
         <div class="question-table">
             <div class="text-center">
                 <h2>Questions</h2>
@@ -74,6 +132,11 @@
             <a href="#" class="myButton">Create Quiz</a>
         </div>
     </div>
+    <script>
+        $('input[type="checkbox"]').on('change', function() {
+   $(this).siblings('input[type="checkbox"]').prop('checked', false);
+    });
+    </script>
 </body>
 
 </html>
