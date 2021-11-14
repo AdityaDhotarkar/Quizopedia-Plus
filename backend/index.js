@@ -16,5 +16,5 @@ app.post('/test',urlBodyEncoder,loginMiddleware,(req,res)=>{
 })
 
 var server = app.listen(8000)
-console.log("Server running")
+console.log("Server running on port 8000");
 module.exports = app;

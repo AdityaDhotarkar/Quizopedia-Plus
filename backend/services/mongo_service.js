@@ -5,7 +5,7 @@ class Database {
   }
 
 _connect() {
-     mongoose.connect(`mongodb://localhost:27017/mindspark`,
+     mongoose.connect(`mongodb+srv://ty12:ty12@cluster0.4qwao.mongodb.net/myFirstDatabase?retryWrites=true&w=majority`,
     {
       useNewUrlParser: true,
       useUnifiedTopology: true,
