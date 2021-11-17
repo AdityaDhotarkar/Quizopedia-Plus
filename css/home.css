@@ -185,6 +185,11 @@ nav {
   color: #e3eeff;
 }
 
+.services .right-image-post .row .col-md-6 .left-image button a{
+  color: #e3eeff;
+  text-decoration: none;
+}
+
 .services .right-image-post .row .col-md-6 .right-image p {
   position: absolute;
   width: 495px;
@@ -228,6 +233,11 @@ nav {
   border-radius: 25px 0px;
   font-size: 20px;
   color: #e3eeff;
+}
+
+.services .right-image-post .row .col-md-6 .right-image button a{
+  color: #e3eeff;
+  text-decoration: none;
 }
 
 .text-service {
