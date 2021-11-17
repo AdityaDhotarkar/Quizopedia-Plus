@@ -30,10 +30,10 @@ module.exports.signup = async (req, res) => {
 }
 
 module.exports.signin = async (req, res) => {
-    let log = new Log(req.url , { username : req.headers.username , password : req.headers.password})
-    const {headers} = req;
+    let log = new Log(req.url , { username : req.body.username , password : req.body.password})
+    // const {headers} = req;
     try {
-        const user = await userModel.login(headers.username, headers.password);
+        const user = await userModel.login(req.body.username, req.body.password);
         console.log('Request received')
         const accessToken  = await jwtService.createToken(user._id);
         const refreshToken = await jwtService.createRefreshToken(user._id);

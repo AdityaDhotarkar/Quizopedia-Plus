@@ -10,7 +10,7 @@ let userSchema = new mongoose.Schema({
     username: {
         type: String, 
         required: [true, "can't be blank"], 
-        match: [/^[a-zA-Z0-9]+$/, 'is invalid'], 
+        // match: [/^[a-zA-Z0-9]+$/, 'is invalid'], 
         unique: true
     },
     email: {
