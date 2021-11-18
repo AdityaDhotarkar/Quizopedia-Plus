@@ -121,6 +121,12 @@ nav {
   color: #e3eeff;
 }
 
+.welcome .right-image-post .row .col-md-6 .left-text button a
+{
+  color: #e3eeff;
+  text-decoration: none;
+}
+
 /* ----------------- */
 .services .right-image-post .row .col-md-6 .right-image img {
   position: absolute;

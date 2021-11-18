@@ -1,0 +1,45 @@
+<!Doctype HTML>
+<html>
+
+<head>
+
+	<link rel="stylesheet" type="text/css" href="../css/quiz.css">
+	<title>Quiz</title>
+	<link href="https://fonts.googleapis.com/css?family=Macondo" rel="stylesheet">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<script>
+		function setColor(btn, color) {
+			var count = 1;
+			var property = document.getElementById(button);
+			if (count == 0) {
+				property.style.backgroundColor = "#FFFFFF"
+				count = 1;
+			} else {
+				property.style.backgroundColor = "#7FFF00"
+				count = 0;
+			}
+
+		}
+	</script>
+</head>
+
+<body>
+	<div id="heading" style="color:white;">
+		<h1 id="text">QUIZ<h1>
+	</div>
+	<div id="quiz">
+		<div id="question"></div>
+		<label class="option"><input type="radio" name="option" value="1" /><span id="option1"></span></label>
+		<label class="option"><input type="radio" name="option" value="2" /><span id="option2"></span></label>
+		<label class="option"><input type="radio" name="option" value="3" /><span id="option3"></span></label>
+		<label class="option"><input type="radio" name="option" value="4" /><span id="option4"></span></label><br>
+		<button style="margin:3px;" id="next" onclick="nextques();">NEXT QUESTION</button>
+	</div>
+	<div id="result" style="display:none">
+	</div>
+	<button id="quit" onclick="quit();">END EXAM</button>
+	<script type="text/javascript" src="../js/questions.js"></script>
+	<script type="text/javascript" src="../js/main.js"></script>
+</body>
+
+</html>

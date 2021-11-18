@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<!--Code by Divinector (www.divinectorweb.com)-->
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Join Quiz</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700;900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="../css/style.css" />
+    <style>
+      input {
+        text-align: center;
+      }
+
+      ::-webkit-input-placeholder {
+        text-align: center;
+      }
+
+      input[type="text"] {
+        width: 100%;
+        padding: 12px 20px;
+        margin: 8px 0;
+        box-sizing: border-box;
+        border: 2px solid red;
+        border-radius: 20px;
+      }
+    </style>
+  </head>
+
+  <body>
+    <header>
+      <div class="wrapper">
+        <div class="logo">
+          <img src="../public/avatar.png" alt="Avatar" class="avatar" />
+        </div>
+        <ul class="nav-area">
+          <li><a href="../index.html">Home</a></li>
+          <li><a href="#">About</a></li>
+          <li><a href="#">Profile</a></li>
+        </ul>
+        <ul class="naav-area">
+          <li><a href="#">ABC XYZ</a></li>
+        </ul>
+      </div>
+      <div class="welcome-text">
+        <h1>Quiz <span>opedia</span></h1>
+
+        <form>
+          <label for="fname"></label>
+          <input
+            type="text"
+            id="fname"
+            name="fname"
+            placeholder="Enter Quiz Code"
+          />
+        </form>
+
+        <br />
+        <button
+          onclick="window.location.href='quiz.html'"
+          class="button-76"
+          role="button"
+          style="height: 50px; width: 250px"
+        >
+          JOIN QUIZ</button
+        ><br /><br />
+        <button
+          onclick="window.location.href='quiz.html'"
+          class="button-76"
+          role="button"
+          style="height: 50px; width: 250px"
+        >
+          JOIN AS A BLIND
+        </button>
+      </div>
+    </header>
+  </body>
+</html>

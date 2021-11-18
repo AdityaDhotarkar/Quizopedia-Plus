@@ -1,0 +1,115 @@
+body {
+	font-family: 'Poppins', sans-serif;
+	background-image: url("bg.jpg");
+	background-repeat: no-repeat;
+	background-size: 1600px 800px
+}
+
+#heading {
+	position: absolute;
+	left: 18%;
+	width: 1000px;
+	background: #caa892;
+	padding: 10px;
+	border: 1px solid #b0855b;
+	box-shadow: 0 0 8px 3px #fff;
+}
+
+#text {
+	font-size: 40px;
+	text-align: center;
+}
+
+#quiz {
+	height: 400px;
+	width: 60%;
+	position: absolute;
+	left: 20%;
+	top: 30%;
+	transform: translateX(-50) translateY(-50);
+	background: rgba(255, 255, 255, 0.5);
+	padding: 20px;
+	border: 1px solid #b0855b;
+	box-shadow: 0 0 8px 3px #fff;
+
+}
+
+#question {
+	padding: 20px;
+	font-size: 22px;
+	background: #37806b;
+	border-radius: 10px;
+	margin: 10px 0 10px 0;
+	color: #f6f6f6;
+}
+
+.option {
+	width: 470px;
+	display: inline-block;
+	padding: 10px 0 10px 0;
+	background: rgba(255, 255, 255, 0.5);
+	margin: 10px 0 10px 10px;
+	color: #000000;
+	border: 2px solid #b0855b;
+	border-radius: 5px;
+}
+
+.option:hover {
+	background: #37806b;
+	color: #f6f6f6;
+}
+
+#next {
+	font-family: 'Poppins', sans-serif;
+	background-color: #4CAF50;
+	width: 10%;
+	height: 4%px;
+	border-radius: 12px;
+	border: 1px solid #b0855b;
+	box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+	cursor: pointer;
+	;
+	float: right;
+	padding: 10px 10px;
+
+}
+
+#next:hover {
+	background-color: #37806b
+}
+
+#quit {
+	font-weight: bold;
+	font-size: 20px;
+	position: absolute;
+	right: 0;
+	bottom: 0;
+	font-family: 'Poppins', sans-serif;
+	background-color:  #4CAF50;
+	border: 1px solid #b0855b;
+	box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+	cursor: pointer;
+	float: right;
+	padding: 20px 40px;
+
+}
+
+#quit:hover {
+	background-color: #caa892
+}
+
+#result {
+	font-size: 100px;
+	text-align: center;
+	height: 100px;
+	width: 60%;
+	position: absolute;
+	left: 20%;
+	top: 30%;
+	transform: translateX(-50) translateY(-50);
+	background: rgba(255, 255, 255, 0.5);
+	padding: 20px;
+
+	border: 10px solid #37806b;
+	box-shadow: 0 0 8px 3px #fff;
+}
