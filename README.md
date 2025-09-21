@@ -1,1 +1,1 @@
-# EDAI_Online_Quiz_System_TY_12
+#  Quiz Management Website for teachers and students with speech recognition system for a blind student.
